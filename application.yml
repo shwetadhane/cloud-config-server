@@ -17,7 +17,7 @@ microservice:
     endpoints:
       endpoint:
         uri: http://ratings-data-service/ratingsdata/user/
-  catalog-service:
+  movie-info-service:
     endpoints:
       endpoint:
-        uri: http://movie-catalog-service/catalog/
+        uri: http://movie-info-service/movies/
