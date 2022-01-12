@@ -1,0 +1,23 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+microservice:
+  ratings-data-service:
+    endpoints:
+      endpoint:
+        uri: http://ratings-data-service/ratingsdata/user/
+  movie-info-service:
+    endpoints:
+      endpoint:
+        uri: http://movie-info-service/movies/
