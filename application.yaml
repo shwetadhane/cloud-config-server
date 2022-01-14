@@ -11,6 +11,13 @@ management:
       exposure:
         include: "*"
 
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    enabled: true
+    baseUrl: http://localhost:9411/
 
 microservice:
   ratings-data-service:
