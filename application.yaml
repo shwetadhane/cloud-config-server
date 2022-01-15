@@ -28,3 +28,7 @@ microservice:
     endpoints:
       endpoint:
         uri: http://movie-info-service/movies/
+  movie-name-service:
+    endpoints:
+      endpoint:
+        uri: http://movie-name-service/name/
